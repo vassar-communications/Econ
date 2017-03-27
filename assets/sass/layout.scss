@@ -1,0 +1,153 @@
+@import "_imports";
+
+
+/*	Do
+	 - Change Search placeholder to serif
+	 - Change nav to serif
+	
+*/
+
+
+/*	LAYOUT
+	====== */
+
+html {
+	padding: 0;
+}
+.u-lHeader {
+	padding: 0;
+	padding-bottom: 2%;
+}
+
+.u-lMain, .u-NavSite {
+	padding-top: 4%;
+}
+.u-lAside {
+	padding-top: 3em;
+}
+
+.u-pageInner {
+	.u-Masthead__siteName {
+		padding-top: 3em;
+		padding-bottom: .25em;
+	}
+}
+
+
+@media all and (min-width: $small) {
+	.u-NavSite {
+		width: 26.5%;
+	}
+	.u-pageInner {
+		.u-Masthead__siteName {
+			padding-top: 0;
+		}
+	}
+}
+@media all and (min-width: $medium) {
+	.u-NavSite {
+		width: 20%;
+	}
+	.u-lAside {
+		max-width: 16em;
+	}
+}
+@media all and (min-width: $large) {
+	.u-NavSite {
+		width: 20%;
+	}
+	.u-lAside {
+		padding-top: 0;
+	}
+	.u-lAside {
+		max-width: none;
+	}
+}
+
+
+.u-Masthead__siteName--link {
+	padding-top: 2%;
+	display: inline-block;
+}
+.u-Masthead {
+	padding-left: 3%;
+}
+	.u-Masthead__siteName {
+		margin: 0;
+	}
+
+@media all and (min-width: $small) {
+	.u-Search__field {
+		padding-left: 0;
+	}
+}
+
+@media all and (min-width: $medium) {
+	body {
+		margin: 1em auto 4em auto;
+	}
+}
+
+
+/*	Nav
+	--- */
+
+@media all and (min-width: $small) {
+	.u-NavSite {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	.u-NavSite__item {
+		padding: .3em 0;
+		padding-left: 14%;
+		padding-right: 8%;
+	}
+	.u-NavSite__level--2 .u-NavSite__item {
+		padding: .225em 0;
+	}
+	.u-NavSite__level--2 {
+		padding-left: 18%;
+	}
+	.u-NavSite__level--2 .u-NavSite__item {
+		padding-left: 2%;
+	}
+}
+
+
+
+/*	News
+	---- */
+
+.u-ArticleListItem {
+	margin-bottom: 1em;
+}
+
+
+/*	Search
+	------ */
+	
+@media all and (min-width: $small) {
+	.u-Search {
+		top: 2em;
+		z-index: 20;
+		right: 3%;
+		left: auto;
+	}
+}
+@media all and (min-width: $large) {
+	.u-Search {
+		width: 21.85%;
+	}
+}
+
+
+
+
+/*	*/
+
+.faq__item {
+	margin: 1.6em 0;
+}
+
+

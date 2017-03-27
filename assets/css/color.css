@@ -1,0 +1,508 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+/*	Search
+	------ */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/* $MenuBtnColor--activated: #000; */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+/* Don't modify these */
+/*	COLOR
+	===== */
+/* line 7, ../sass/color.scss */
+html {
+  background: url(../images/css/background-2.jpg); }
+
+/* line 10, ../sass/color.scss */
+body {
+  background: url(../images/css/content-bg.jpg);
+  position: relative; }
+
+/* line 14, ../sass/color.scss */
+.u-lFooter {
+  background: url(../images/css/footer-bg.jpg);
+  position: relative;
+  z-index: 9;
+  border-top: 3px double #abc0c8; }
+
+/* line 20, ../sass/color.scss */
+a {
+  color: #c33600;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+  padding-bottom: 0; }
+
+/* line 25, ../sass/color.scss */
+a:visited,
+a:hover {
+  color: #444; }
+
+/* line 29, ../sass/color.scss */
+a:visited:hover {
+  color: #c33600; }
+
+/* line 33, ../sass/color.scss */
+.u-lContent a:hover,
+.u-lContent a:visited {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+/* line 37, ../sass/color.scss */
+.u-lContent a:visited:hover {
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3); }
+/* line 40, ../sass/color.scss */
+.u-lContent h2 a, .u-lContent h3 a, .u-lContent h4 a, .u-lContent h5 a, .u-lContent h6 a,
+.u-lContent h2 a:hover, .u-lContent h3 a:hover, .u-lContent h4 a:hover, .u-lContent h5 a:hover, .u-lContent h6 a:hover {
+  border: none; }
+
+/* line 46, ../sass/color.scss */
+::selection {
+  background: #fea;
+  color: #330;
+  text-shadow: none; }
+
+/* line 53, ../sass/color.scss */
+.u-pageTitle:after {
+  content: "";
+  top: 124%;
+  width: 3em;
+  border-top: 3px solid #d00;
+  height: 1px;
+  position: absolute;
+  left: 0; }
+
+/*	Layout lines
+	------------ */
+/* line 67, ../sass/color.scss */
+.u-NavSite:after {
+  display: none; }
+
+@media all and (min-width: 600px) {
+  /* line 72, ../sass/color.scss */
+  .u-pageInner .u-NavSite:before,
+  .u-pageInner .u-NavSite:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed #abc0c8;
+    top: 0;
+    z-index: 2; } }
+@media all and (min-width: 600px) {
+  /* line 86, ../sass/color.scss */
+  .u-pageInner .u-NavSite:before {
+    left: 26.5%; }
+  /* line 89, ../sass/color.scss */
+  .u-pageInner .u-NavSite:after {
+    right: 27.5%; } }
+@media all and (min-width: 800px) {
+  /* line 96, ../sass/color.scss */
+  .u-pageInner .u-NavSite:before {
+    left: 20%; } }
+@media all and (min-width: 60em) {
+  /* line 103, ../sass/color.scss */
+  .u-pageInner .u-NavSite:before {
+    left: 20%; }
+  /* line 106, ../sass/color.scss */
+  .u-pageInner .u-NavSite:after {
+    right: 27.5%;
+    display: block; } }
+@media all and (min-width: 600px) {
+  /* line 116, ../sass/color.scss */
+  .u-pageInner .u-lHeader {
+    background: #fff;
+    position: relative;
+    z-index: 10; }
+
+  /* line 122, ../sass/color.scss */
+  .u-Search {
+    border-bottom: 1px solid #E3B8C9; } }
+/*	Footer
+	------ */
+/* line 130, ../sass/color.scss */
+.u-VCard--site .u-VCard__label {
+  color: rgba(0, 0, 0, 0.4); }
+
+/* line 134, ../sass/color.scss */
+.u-lFooter:before,
+.u-lFooter:after {
+  content: "";
+  position: absolute;
+  background: url(../images/css/footer-bg.jpg);
+  height: 100%;
+  top: -3px;
+  width: 100%;
+  border-top: 3px double #abc0c8; }
+
+/* line 144, ../sass/color.scss */
+.u-lFooter:before {
+  left: -100%; }
+
+/* line 147, ../sass/color.scss */
+.u-lFooter:after {
+  right: -100%; }
+
+/* line 153, ../sass/color.scss */
+.u-pageInner .u-NavSite {
+  border-bottom: 1px dashed #e3b6ce; }
+/* line 157, ../sass/color.scss */
+.u-pageInner body:before,
+.u-pageInner body:after {
+  content: "";
+  position: absolute;
+  background: url(../images/css/footer-bg.jpg);
+  height: 100%;
+  top: 0;
+  width: 100%; }
+/* line 166, ../sass/color.scss */
+.u-pageInner body:before {
+  left: -100%;
+  border-right: 3px double #abc0c8;
+  border-right: 1px dashed #abc0c8;
+  border: none;
+  border-right: 3px double rgba(227, 182, 206, 0.4); }
+/* line 173, ../sass/color.scss */
+.u-pageInner body:after {
+  right: -100%;
+  border-left: 1px dashed #abc0c8;
+  border: none;
+  border-left: 3px double rgba(227, 182, 206, 0.4); }
+/* line 179, ../sass/color.scss */
+.u-pageInner .u-lMain {
+  position: relative; }
+@media all and (min-width: 600px) {
+  /* line 183, ../sass/color.scss */
+  .u-pageInner .u-lMain:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: -100%;
+    width: auto;
+    z-index: 30;
+    height: 4px;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, transparent));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    /* IE6-9 */ } }
+/* line 203, ../sass/color.scss */
+.u-pageInner .u-lHeader:before,
+.u-pageInner .u-lHeader:after {
+  content: "";
+  position: absolute;
+  background: #E6F5F5;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+/* line 213, ../sass/color.scss */
+.u-pageInner .u-lHeader:before {
+  left: -100%; }
+/* line 216, ../sass/color.scss */
+.u-pageInner .u-lHeader:after {
+  right: -100%; }
+
+/*
+.u-lHeader:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: .2em;
+	left: 0;
+	border-top: 1px solid #95e3f4;
+}
+*/
+/* line 231, ../sass/color.scss */
+.u-Masthead__siteName--link {
+  border-top: .125em solid #5CB8CC; }
+
+/*	Modules
+	------- */
+/* line 240, ../sass/color.scss */
+.u-lAside .Module__listItem {
+  border-top-color: rgba(0, 0, 0, 0.1); }
+
+/*	Search
+	------ */
+@media all and (min-width: 600px) {
+  /* line 250, ../sass/color.scss */
+  .u-Search {
+    border-bottom: 2px solid #E3B8C9; } }
+/*	Masthead
+	-------- */
+/* line 259, ../sass/color.scss */
+.u-Masthead__siteName--link {
+  border: none;
+  color: #aaa; }
+
+/* line 263, ../sass/color.scss */
+.u-Masthead__siteName {
+  border-bottom: 2px solid #5CB8CC; }
+
+@media all and (min-width: 600px) {
+  /* line 268, ../sass/color.scss */
+  .u-Masthead__siteName {
+    border-bottom: none; } }
+@media all and (min-width: 800px) {
+  /* line 275, ../sass/color.scss */
+  .u-pageHome .u-Masthead__siteName--link {
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent), #000 url(../images/css/header-bg.png) no-repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position: bottom; } }
+@media all and (min-width: 600px) {
+  /* line 288, ../sass/color.scss */
+  .u-pageInner .u-Masthead__siteName--link,
+  .u-pageInner .u-Masthead__siteName--link:visited {
+    color: #000;
+    color: #95e3f4;
+    /*	text-shadow: 0 0 1px #abc0c8, 0 0 1px #abc0c8, 0 0 1px #abc0c8, 0 0 1px #abc0c8, 0 0 1px #abc0c8; */
+    color: black;
+    -webkit-text-fill-color: #C7E6ED;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5CB8CC;
+    font-weight: normal; }
+  /* line 299, ../sass/color.scss */
+  .u-pageInner .u-Masthead__siteName--link:hover {
+    color: black;
+    -webkit-text-fill-color: #5CB8CC;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5CB8CC;
+    font-weight: normal; } }
+/* line 308, ../sass/color.scss */
+.u-Masthead__vassar--link,
+.u-Masthead__vassar--link:visited {
+  color: #5CB8CC; }
+
+/* line 312, ../sass/color.scss */
+.u-Masthead__vassar--link:hover {
+  color: #1F7D91; }
+
+/*	Nav
+	--- */
+/*
+	.u-NavSite__item {
+		border-top: 1px solid rgba(0,0,0,.05);
+	}
+*/
+@media all and (min-width: 600px) {
+  /* line 327, ../sass/color.scss */
+  .u-pageInner .u-NavSite__item,
+  .u-pageInner .u-NavSite__item:visited {
+    color: #607890; }
+  /* line 331, ../sass/color.scss */
+  .u-pageInner .u-NavSite__item--isCurrent,
+  .u-pageInner .u-NavSite__item--isCurrent:visited,
+  .u-pageInner .u-NavSite__item:hover {
+    background: rgba(225, 180, 0, 0.4);
+    border-left: 3px double rgba(227, 182, 206, 0.6);
+    margin-left: -3px;
+    position: relative;
+    z-index: 200;
+    border-right: 1px solid #000;
+    margin-right: -1px;
+    color: #000;
+    text-indent: 3px; }
+  /* line 344, ../sass/color.scss */
+  .u-pageInner .u-NavSite__item:hover {
+    background: rgba(0, 180, 225, 0.1);
+    color: #000; }
+  /* line 349, ../sass/color.scss */
+  .u-pageInner .u-NavSite__level .u-NavSite__item--isCurrent,
+  .u-pageInner .u-NavSite__level .u-NavSite__item--isCurrent:visited,
+  .u-pageInner .u-NavSite__level .u-NavSite__item:hover {
+    border-left: none; } }
+/*	News
+	---- */
+/* line 364, ../sass/color.scss */
+.u-lContent .u-ArticleListItem__link
+.u-ArticleListItem__link:visited,
+.u-lContent .u-ArticleListItem__link:hover {
+  border: none; }
+
+/* line 372, ../sass/color.scss */
+.u-pageHome .Module--contact,
+.u-pageHome .Module--news {
+  display: none; }
+
+/* line 3, ../sass/hp.scss */
+.u-pageHome {
+  /*	Layout
+  	------ */
+  /*	Typography
+  	---------- */
+  /*	Color
+  	----- */ }
+  /* line 9, ../sass/hp.scss */
+  .u-pageHome .u-Masthead__siteName--link {
+    padding: 4% 0 0 0; }
+  /* line 12, ../sass/hp.scss */
+  .u-pageHome .u-lMain, .u-pageHome .u-NavSite {
+    padding-top: 1%;
+    padding-right: 0; }
+  /* line 16, ../sass/hp.scss */
+  .u-pageHome .u-NavSite {
+    padding-left: 3%; }
+  /* line 19, ../sass/hp.scss */
+  .u-pageHome .u-NavSite__item {
+    padding: .35em 0; }
+  /* line 23, ../sass/hp.scss */
+  .u-pageHome .u-lHeader {
+    padding-top: 4em; }
+  @media all and (min-width: 600px) {
+    /* line 28, ../sass/hp.scss */
+    .u-pageHome .u-Search {
+      right: 0;
+      left: auto; }
+    /* line 32, ../sass/hp.scss */
+    .u-pageHome .u-lHeader {
+      padding-top: 0; } }
+  @media all and (min-width: 600px) {
+    /* line 37, ../sass/hp.scss */
+    .u-pageHome .u-lContent {
+      padding-right: 8%; } }
+  @media all and (min-width: 60em) {
+    /* line 42, ../sass/hp.scss */
+    .u-pageHome .u-lContent {
+      padding-right: 4%; }
+    /* line 45, ../sass/hp.scss */
+    .u-pageHome .u-Masthead__siteName--link {
+      padding-left: .05em;
+      padding-right: .1em; } }
+  /* line 51, ../sass/hp.scss */
+  .u-pageHome .u-lContent {
+    margin-bottom: 4.25em; }
+  /* line 54, ../sass/hp.scss */
+  .u-pageHome .u-lFooter {
+    padding: 4em 4%; }
+  /* line 62, ../sass/hp.scss */
+  .u-pageHome .u-Masthead__siteName--link {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center; }
+  @media all and (min-width: 600px) {
+    /* line 69, ../sass/hp.scss */
+    .u-pageHome .u-Masthead__siteName--link {
+      font-size: 10.5vw;
+      letter-spacing: -.5vw;
+      text-indent: -1vw;
+      font-weight: 300; } }
+  @media all and (min-width: 1367px) {
+    /* line 77, ../sass/hp.scss */
+    .u-pageHome .u-Masthead__siteName--link {
+      font-size: 4.5em; } }
+  /* line 86, ../sass/hp.scss */
+  .u-pageHome body {
+    background: #fff;
+    position: relative; }
+  /* line 90, ../sass/hp.scss */
+  .u-pageHome body:before,
+  .u-pageHome body:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    top: 0;
+    width: 100%; }
+  /* line 99, ../sass/hp.scss */
+  .u-pageHome body:before {
+    left: -100%; }
+  /* line 102, ../sass/hp.scss */
+  .u-pageHome body:after {
+    right: -100%; }
+  @media all and (min-width: 600px) {
+    /* line 107, ../sass/hp.scss */
+    .u-pageHome .u-Masthead__vassar--link:after {
+      content: "";
+      position: absolute;
+      width: 99%;
+      height: 1px;
+      border-bottom: 3px double #e3b6ce;
+      top: 50%;
+      margin-left: 1%; } }
+  /* line 117, ../sass/hp.scss */
+  .u-pageHome .u-Masthead__siteName--link,
+  .u-pageHome .u-Masthead__siteName--link:visited {
+    color: #000; }
+  /* line 122, ../sass/hp.scss */
+  .u-pageHome .u-NavSite__item {
+    border-bottom: 1px solid #eee; }
+  /* line 125, ../sass/hp.scss */
+  .u-pageHome .u-NavSite__item,
+  .u-pageHome .u-NavSite__item:visited {
+    color: #d8652f; }
+  /* line 129, ../sass/hp.scss */
+  .u-pageHome .u-NavSite__item:hover {
+    color: #BA4813; }
+  /* line 132, ../sass/hp.scss */
+  .u-pageHome .u-lContent p:last-child {
+    position: relative; }
+  /* line 135, ../sass/hp.scss */
+  .u-pageHome .u-lContent p:last-child:after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    background: url(../images/css/fp-imagebanner.jpg);
+    background-size: cover; }
